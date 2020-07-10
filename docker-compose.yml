@@ -9,10 +9,10 @@ services:
       - SPRING_DATASOURCE_PASSWORD=abc123123
       - SPRING_DATASOURCE_TEST_ON_BORROW=true
       - SPRING_DATASOURCE_TIME_BETWEEN_EVICTION_RUNS_MILLIS=6000
-      - SPRING_MAIL_HOST=smtp.163.com
+      - SPRING_MAIL_HOST=smtp.qq.com
       - SPRING_MAIL_PORT=465
-      - SPRING_MAIL_USERNAME=xxxxxx@163.com
-      - SPRING_MAIL_PASSWORD=xxxxxxxx
+      - SPRING_MAIL_USERNAME=2154747935@qq.com
+      - SPRING_MAIL_PASSWORD=aA123456
       - SPRING_MAIL_NICKNAME=davinci
       - SPRING_MAIL_PROPERTIES_MAIL_SMTP_SSL_ENABLE=true
       - SCREENSHOT_DEFAULT_BROWSER=CHROME
@@ -27,6 +27,7 @@ services:
       - davinci_logs:/opt/davinci/logs
       - davinci_userfiles:/opt/davinci/userfiles
       - davinci_initdb:/initdb
+    privileged: true
       # 如果要使用更多数据源，请将驱动挂载到/opt/davinci/lib/下面，类似下面
       # - kylin-jdbc-2.6.3.jar.jar:/opt/davinci/lib/kylin-jdbc-2.6.3.jar.jar
       # - mssql-jdbc-7.0.0.jre8.jar:/opt/davinci/lib/mssql-jdbc-7.0.0.jre8.jar
